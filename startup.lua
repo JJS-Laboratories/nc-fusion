@@ -7,4 +7,4 @@ local g = component.gpu
 
 term.setCursor(3,2)
 g.setForeground(0x0055FF)
-g.fill(3,2,158,49,"+")
+g.fill(3,2,156,48,"+")
