@@ -9,6 +9,7 @@ term.setCursor(3,2)
 
 g.setBackground(0x0033DD)
 g.fill(1,1,160,50," ")
+g.setBackground(0x777777)
 g.setForeground(0x0055FF)
 g.setBackground(0x0033FF)
 g.fill(3,3,156,47," ")
