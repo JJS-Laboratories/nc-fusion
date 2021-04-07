@@ -61,7 +61,7 @@ repeat
     then
         g.setBackground(0xDD3355)
     else
-        if r.getEfficiency() >= 100
+        if r.getEfficiency() >= 98
         then
             g.setBackground(0xDDDDDD)
         else
@@ -78,7 +78,7 @@ repeat
     then
         g.setBackground(0xFF5577)
     else
-        if r.getEfficiency() >= 100
+        if r.getEfficiency() >= 98
         then
             g.setBackground(0xFFFFFF)
         else
