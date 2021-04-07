@@ -153,9 +153,9 @@ repeat
 
     term.setCursor(5,23)
     os.sleep(0.1)
-    if startup == true then
+    if starting == true then
     computer.beep()
-    startup = false
+    starting = false
     end
 until looping == false
 
