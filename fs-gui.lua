@@ -7,6 +7,7 @@ local shell = require("shell")
 local r = component.nc_fusion_reactor
 local g = component.gpu
 
+local starting = true
 g.setResolution(80,25)
 
 term.setCursor(3,2)
@@ -152,6 +153,10 @@ repeat
 
     term.setCursor(5,23)
     os.sleep(0.1)
+    if startup == true then
+    computer.beep()
+    startup = false
+    end
 until looping == false
 
 computer.beep()
