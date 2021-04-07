@@ -19,3 +19,6 @@ g.setBackground(0xCCBBBB)
 g.setForeground(0xFF2222)
 term.setCursor(158,2)
 term.write('X')
+-- TEST 1212 POO
+
+--TEST 2
