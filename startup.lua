@@ -7,11 +7,16 @@ local g = component.gpu
 
 term.setCursor(3,2)
 
-g.setBackground(0x0033DD)
+g.setBackground(0x0077FF)
 g.fill(1,1,160,50," ")
-g.setBackground(0xAAAAAA)
+g.setBackground(0x888888)
 g.fill(1,1,160,3," ")
-g.setBackground(0x0055FF)
+g.setBackground(0x0055CC)
 g.fill(1,4,2,47," ")
-g.setBackground(0x0033FF)
-g.fill(3,3,156,47," ")
+g.setBackground(0x0055FF)
+g.fill(3,4,156,46," ")
+g.setBackground(0xCCBBBB)
+g.setForeground(0xFF2222)
+term.setCursor(158,2)
+term.write('X')
+-- THIS IS A TEST 121212
