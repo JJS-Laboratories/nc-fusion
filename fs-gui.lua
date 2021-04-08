@@ -54,7 +54,7 @@ term.write("⬤")
 
 local looping = true
 local mt = r.getMaxTemperature() / 1000000
-local mt2 = getFusionComboHeatVariable() / 1000000
+local mt2 = r.getFusionComboHeatVariable() / 1000000
 repeat
     local ra = r.isProcessing()
 
