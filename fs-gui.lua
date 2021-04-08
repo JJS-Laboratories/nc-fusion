@@ -53,6 +53,7 @@ term.setCursor(38,2)
 term.write("⬤")
 
 local looping = true
+local mt = r.getMaxTemperature() / 1000000
 
 repeat
     local ra = r.isProcessing()
@@ -94,7 +95,6 @@ repeat
     term.write("⬤ Temperature : ")
 
     local t = r.getTemperature() / 1000000
-    local mt = r.getMaxTemperature() / 1000000
     local pt = (t / mt) * 100
 
     g.setForeground(0xFF7777)
