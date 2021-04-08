@@ -53,8 +53,8 @@ term.setCursor(38,2)
 term.write("⬤")
 
 local looping = true
-local mt = r.getMaxTemperature() / 1000000
-local mt2 = r.getFusionComboHeatVariable() / 1000000
+local mt = r.getMaxTemperature()/1000000
+
 repeat
     local ra = r.isProcessing()
 
@@ -95,7 +95,7 @@ repeat
     term.write("⬤ Temperature : ")
 
     local t = r.getTemperature() / 1000000
-    local pt = (t / mt2) * 100
+    local pt = (t / mt) * 100
 
     g.setForeground(0xFF7777)
     term.write(string.format("%.0f/", t))
@@ -131,10 +131,17 @@ repeat
         term.write("No")
     end
 
-    term.setCursor(25,11)
+    g.setForeground(0xFFFFFF)
+    term.setCursor(25,10)
+    term.write("⬤ Cooling Rate: ")
+    g.setForeground(0x0000FF)
+    term.write(r.getReactorCoolingRate())
+    term.write(" K/t")
+
+    term.setCursor(25,12)
     g.setForeground(0xFFFFFF)
     term.write("⬤ Potential Problem:")
-    term.setCursor(29,12)
+    term.setCursor(29,13)
     g.setForeground(0xFF7777)
     term.write(r.getProblem())
     local key1 = k.isKeyDown("s")
@@ -167,7 +174,7 @@ g.setForeground(0xFFFFFF)
 term.setCursor(68,25)
 term.write("Shutting down program...")
 
-os.sleep(2)
+os.sleep(0.5)
 
 g.setForeground(0xFFFFFF)
 g.setBackground(0x000000)
