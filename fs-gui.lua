@@ -3,6 +3,8 @@ local term = require("term")
 local computer = require("computer")
 local k = require("keyboard")
 local shell = require("shell")
+local sides = require("sides")
+local rs = component.redstone
 
 local r = component.nc_fusion_reactor
 local g = component.gpu
@@ -61,7 +63,9 @@ repeat
     if ra == false
     then
         g.setBackground(0xDD3355)
+        rs.setOutput(sides.bottom, 0 )
     else
+        rs.setOutput(sides.bottom, 15 )
         if r.getEfficiency() >= 98
         then
             g.setBackground(0xDDDDDD)
