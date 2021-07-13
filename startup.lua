@@ -1,14 +1,14 @@
-local component = require("component")
-local term = require("term")
-local computer = require("computer")
-local k = require("keyboard")
-local shell = require("shell")
+local component = require("component") -- enables a library (basically , infos that the code can use to run more stuff) | this one is to use the components like graphic cards!
+local term = require("term") -- This another library , this one is for writing stuff on screen and moving the cursor xd
+local computer = require("computer") -- that's just uuuh.. for making B E E P S
+local k = require("keyboard") -- do i need to explain this one? do i?
+local shell = require("shell") --this is to execute commands because im lazy
 
-local g = component.gpu
+local g = component.gpu --this registers the graphic card , to use later! :3
 
 print("Hello user! Searching for updates..")
 os.sleep(1)
-shell.execute("cd /home")
+shell.execute("cd /home") -- Now it does all the deleting old version , downloading new one , and then it launches uwu
 shell.execute("del fs-gui.lua")
 print("--Deleted FS-Gui--")
 shell.execute("del startup.lua")
