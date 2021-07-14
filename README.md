@@ -53,4 +53,4 @@ Then start the file named `startup.lua` and wait for it to download
 
 # To do:
 
-- Fix the auto-update (if you don't have internet access the program will delete on startup , and will be unable to re-download)
+- Fix the auto-update (if you don't have internet access, the program will delete on startup, and then wont be able to re-download properly)
