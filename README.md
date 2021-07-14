@@ -25,13 +25,6 @@ Displays status: RED = Shutdown/Too cold , Green = Hot enough to start/run , Whi
 
 ---------------
 
-# How to install:
-
-Simply go into your OpenOS shell and write `wget https://raw.githubusercontent.com/superjaja05/nc-fusion/main/startup.lua`.
-Then start the file named `startup.lua` and wait for it to download
-
----------------
-
 # Requirements:
 
 - Internet Card
@@ -39,6 +32,22 @@ Then start the file named `startup.lua` and wait for it to download
 - Redstone Card
 - T3 Screen
 - A Fusion Reactor connected to the computer
+
+---------------
+
+# How to install:
+
+Simply go into your OpenOS shell and write `wget https://raw.githubusercontent.com/superjaja05/nc-fusion/main/startup.lua`.
+Then start the file named `startup.lua` and wait for it to download
+
+---------------
+
+# How to make it auto-start
+
+1. Edit the file .shrc : `edit /home/.shrc`
+2. Add `/home/startup.lua` in the file
+3. Press `CTRL+S` to save , then `CTRL+W` to leave
+4. Restart the computer , and see if it works!
 
 ---------------
 
