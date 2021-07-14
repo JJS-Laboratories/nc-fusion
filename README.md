@@ -1,4 +1,4 @@
-# nc-fusion
+# Welcome to nc-fusion !
 
 Welcome! This is a silly OC(OpenComputer) program i made.
 
@@ -8,14 +8,14 @@ This program is made to monitor a Fusion Reactor from NC (NuclearCraft)
 
 # Features:
 
-Auto-Update
-Temp Display
-Efficiency Display
-Generation Rate (RF/t)
-Cooling Rate (K/t)
-Problem Display (Example : E-Magnets not powered)
+- Auto-Update
+- Temp Display
+- Efficiency Display
+- Generation Rate (RF/t)
+- Cooling Rate (K/t)
+- Problem Display (Example : E-Magnets not powered)
 
-Displays status: RED = Shutdown/Too cold , Green = Hot enough to start/run , White = close to Full Efficiency
+- Displays status: RED = Shutdown/Too cold , Green = Hot enough to start/run , White = close to Full Efficiency
 
 ---------------
 
