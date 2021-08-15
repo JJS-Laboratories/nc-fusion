@@ -148,6 +148,7 @@ repeat
     term.setCursor(29,13)
     g.setForeground(0xFF7777)
     term.write(r.getProblem())
+    term.write("                  ")
     local key1 = k.isKeyDown("s")
     if key1 then break end
 
