@@ -27,4 +27,15 @@ tnl.send(V1,V2,V3,V4,V5,V6,V7,V8)
 
 os.sleep(0.5)
 
+term.clear()
+term.setCursor(1,1)
+print(V1)
+print(V2)
+print(V3)
+print(V4)
+print(V5)
+print(V6)
+print(V7)
+print(V8)
+
 until i == 2
