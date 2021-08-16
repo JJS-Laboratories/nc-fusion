@@ -60,6 +60,7 @@ local looping = true
 local mt = getMaxTemp1/1000000
 
 repeat
+    g.setResolution(80,25)
     local _, _, _, _, _, getMaxTemp1, isProcessing1, getEfficiency1, getTemperature1, getReactorProcessPower1, isHotEnough1, getReactorCoolingRate1, getProblem1 = event.pull("modem_message")
     local ra = isProcessing1
 

@@ -58,6 +58,7 @@ local looping = true
 local mt = r.getMaxTemperature()/1000000
 
 repeat
+    g.setResolution(80,25)
     local ra = r.isProcessing()
 
     if ra == false
