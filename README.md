@@ -19,11 +19,11 @@ This program is made to monitor a Fusion Reactor from NC (NuclearCraft)
 
 - **NEW!** a wire-less version of the program!
   - to make it work:
-  - 1. place two computers with linked cards
-  - 2. install fs-network.lua on the host (the computer connected to the reactor)
-  - 3. install fs-guiNET.lua on the client (the one that will show the interface)
-  - 4. run both programs on the computers
-  - 5. Done! enjoy the wireless!
+  - place two computers with linked cards
+  - install fs-network.lua on the host (the computer connected to the reactor)
+  - install fs-guiNET.lua on the client (the one that will show the interface)
+  - run both programs on the computers
+  - Done! enjoy the wireless!
 
 ---------------
 
