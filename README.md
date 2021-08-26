@@ -17,6 +17,14 @@ This program is made to monitor a Fusion Reactor from NC (NuclearCraft)
 
 - Displays status: RED = Shutdown/Too cold , Green = Hot enough to start/run , White = close to Full Efficiency
 
+- **NEW!** a wire-less version of the program!
+ - to make it work:
+ - place two computers with linked cards
+ - install fs-network.lua on the host (the computer connected to the reactor)
+ - install fs-guiNET.lua on the client (the one that will show the interface)
+ - run both programs on the computers
+ - Done! enjoy the wireless!
+
 ---------------
 
 # Preview of interface:
