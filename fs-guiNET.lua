@@ -6,6 +6,7 @@ local shell = require("shell")
 local sides = require("sides")
 local rs = component.redstone
 local event = require("event")
+local colors = require("colors")
 
 local g = component.gpu
 local tnl = component.tunnel
@@ -60,22 +61,29 @@ local looping = true
 local mt = getMaxTemp1/1000000
 
 repeat
-    g.setResolution(80,25)
     local _, _, _, _, _, getMaxTemp1, isProcessing1, getEfficiency1, getTemperature1, getReactorProcessPower1, isHotEnough1, getReactorCoolingRate1, getProblem1 = event.pull("modem_message")
     local ra = isProcessing1
 
     if ra == false
     then
         g.setBackground(0xDD3355)
-        rs.setOutput(sides.bottom, 0 )
+        rs.setBundledOutput(sides.bottom, colors.lime, 0)
     else
-        rs.setOutput(sides.bottom, 15 )
+        rs.setBundledOutput(sides.bottom, colors.lime, 255)
         if getEfficiency1 >= 98
         then
             g.setBackground(0xDDDDDD)
+            rs.setBundledOutput(sides.bottom, colors.white, 255)
         else
             g.setBackground(0x22DD00)
+            rs.setBundledOutput(sides.bottom, colors.white, 0)
         end
+    end
+
+    if getProblem1 ~= "No Problem" then
+        rs.setBundledOutput(sides.bottom, colors.red, 255)
+    else
+        rs.setBundledOutput(sides.bottom, colors.red, 0)
     end
     g.fill(5,5,2,9," ")
     g.fill(21,5,2,9," ")
